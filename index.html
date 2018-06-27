@@ -9,22 +9,24 @@
 </head>
 <body>
 
-	<img src="https://tf-assets-prod.s3.amazonaws.com/tf-curric/WEB-DEV-001/2.5.2_challenge_signup_form/logo.png" alt="Analog Sea Image">
+	<img src="https://tf-assets-prod.s3.amazonaws.com/tf-curric/WEB-DEV-001/2.5.2_challenge_signup_form/logo.png" alt="Analog Sea Image" class="center">
 
-	<form class="form" action="/signup/some-server-endpoint" method="post">
+	<form class="form center" action="/signup/some-server-endpoint" method="post">
 		<fieldset name="signin">
 			<legend></legend>
 				<h1> Sign up </h1>
 
 				<label for="Email"> Email </label>
-				<input placeholder="foo@bar.com" type="text" name="email" id="email">
+				<input placeholder="foo@bar.com" type="text" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
 
 				<label for="Password" > Password </label>
-				<input placeholder="1244passw0rd" type="text" name="password">
+				<input placeholder="1244passw0rd" type="text" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
 
 				<button type="submit"> <b>Sign In</b> </button
 		</fieldset>
 	</form>
-		<h3> <b>Already have an account? <a href="/login">Log in </a> </b></h3>
+
+	<footer role="contentinfo" class="footer"> <!-- why did they put a footer? instead of header? -->
+		<p> Already have an account? <a href="/login"> Login </a></p>
 </body>
 </html>

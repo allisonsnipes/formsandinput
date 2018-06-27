@@ -12,6 +12,9 @@ body {
 
 img {
 	height: 35px;
+	display: block;
+	float: center;
+	margin-bottom: 25px;
 }
 
 .form fieldset {
@@ -20,6 +23,10 @@ img {
 	padding-left: 40px;
 	padding-right: 40px;
 	border: none;
+	text-align: left;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .form label {
@@ -70,6 +77,17 @@ button {
 	background-color: green;
 }
 
-h1, a {
+.footer {
+	text-align: center;
+	border: 0;
+	padding: 0;
+}
+.footer a { /* the footer wont go to the outside of the box*/
 	color: white;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
