@@ -1,0 +1,27 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+		font: 100%/1.25 'Roboto', helvetica, sans-serif;
+}
+
+body {
+	background-color: #1e90ff;
+
+}
+
+.logo {
+	height: 35px;
+}
+
+.signin {
+	background-color: white;
+	width: 400px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+h3{
+	color: white;
+}
