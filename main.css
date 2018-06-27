@@ -3,25 +3,55 @@
 }
 
 html {
-		font: 100%/1.25 'Roboto', helvetica, sans-serif;
+	font: 100%/1.25 'Roboto', helvetica, sans-serif;
 }
 
 body {
 	background-color: #1e90ff;
-
 }
 
-.logo {
+img {
 	height: 35px;
 }
 
-.signin {
+.form fieldset {
 	background-color: white;
 	width: 400px;
 	padding-left: 40px;
 	padding-right: 40px;
+	border: none;
 }
 
-h3{
+.input {
+	width: 303px;
+	border: 2px;
+	padding-left: : 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	height: 38px;
+}
+
+button {
+	background-color: #32CD32;
+	color: white;
+	width: 303px;
+	border: 2px;
+	padding-left: : 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	height: 38px;
+	display: inline-block;
+	transition-property: color, background;
+	transition-duration: .40s;
+	transition-timing-function: ease-in-out;
+}
+
+.form button:hover, .form button:active, .button:focus {
+	background-color: green;
+}
+
+h3 {
 	color: white;
 }
